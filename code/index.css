@@ -1,7 +1,6 @@
 /*******************************
             Global
 *******************************/
-
 html, body {
   font-family: "Lato", Arial, sans-serif;
   margin: 0px;
@@ -20,27 +19,155 @@ h5 {
   font-family: "Merriweather", Times New Roman, serif;
 }
 
-
-.button {
-
+p {
+  color: #7C7C7C;
 }
 
+
+.button {
+  background-color: #4DAF7C;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+/* utils */
+.txt__color-primary {
+  color: #4DAF7C;
+}
+
+.container {
+  max-width: 1200px;
+}
 
 
 /*******************************
               Page
 *******************************/
+nav {
+  padding: 24px 0px;
+}
 
 .hero {
-
+  background-color: #DFF1E8;
+  min-height: 560px;
 }
+
+.container__hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero__left {
+  flex: 0 1 50%;
+}
+
+.hero__right {
+  align-self: flex-end;
+}
+
+.hero__left h1 {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hero__left p {
+  padding: 0px 0 62px 0;
+  max-width: 400px;
+  font-size: 19px;
+  line-height: 1.7;
+  font-weight: 200;
+  margin: 0;
+}
+
+
 
 .page {
-
+  margin-top: 100px;
 }
 
-.footer {
+.container__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 73px 0px;
+}
 
+.card {
+  flex: 0 1 340px;
+  box-shadow: 0px 3px 8px #ddd;
+  min-height: 400px;
+}
+
+.card:hover {
+  box-shadow: 0px 3px 8px #000;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.card__img {
+  background-color: #2C2E30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 220px;
+}
+
+.card__content {
+  padding: 20px 30px;
+}
+
+.cta__container {
+  margin-top: 100px;
+  background-image: url('./images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  flex: 1 1 50%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.cta__left {
+  position: relative;
+}
+
+.cta__left::after {
+  content: "";
+  display: block;
+  border-right: 2px solid #000;
+  opacity: 0.1;
+  height: 132px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cta p {
+  max-width: 282px;
+  display: inline-block;
+}
+
+footer {
+  background-color: #2c2e30;
+  height: 60px;
+}
+
+.container__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 
