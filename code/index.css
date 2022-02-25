@@ -31,6 +31,11 @@ p {
   padding: 12px 24px;
   border-radius: 5px;
 }
+
+.button:hover {
+  opacity: .8;
+}
+
 /* utils */
 .txt__color-primary {
   color: #4DAF7C;
@@ -45,12 +50,12 @@ p {
               Page
 *******************************/
 nav {
-  padding: 24px 0px;
+  padding: 20px 0px;
 }
 
 .hero {
   background-color: #DFF1E8;
-  min-height: 560px;
+  min-height: 600px;
 }
 
 .container__hero {
@@ -66,6 +71,11 @@ nav {
 
 .hero__right {
   align-self: flex-end;
+  flex: 0 1 50%;
+}
+
+.hero__right img {
+  width: 100%;
 }
 
 .hero__left h1 {
@@ -100,7 +110,7 @@ nav {
 .card {
   flex: 0 1 340px;
   box-shadow: 0px 3px 8px #ddd;
-  min-height: 400px;
+  min-height: 414px;
 }
 
 .card:hover {
@@ -127,6 +137,7 @@ nav {
   background-image: url('./images/cta-bg.png');
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
   min-height: 250px;
   display: flex;
   justify-content: center;
@@ -136,6 +147,10 @@ nav {
   flex: 1 1 50%;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.card__content p {
+  font-size: 1.2rem;
 }
 
 .cta__left {
@@ -151,6 +166,11 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.cta span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .cta p {
@@ -181,16 +201,44 @@ footer {
 
 /* Small Monitor */
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-
-
+.card {
+    flex: 0 1 290px;
+  }
 }
 
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
+  .hero {
+    min-height: 500px;
+  }
 
+  .hero__left h1 {
+    font-size: 2.5em;
+  }
+
+  .hero__left p {
+    font-size: 1.1em;
+  }
+
+  .hero__right {
+    align-self: center;
+  }
+  
 }
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .hero__left {
+    flex: 0 1 100%;
+  }
+  .hero__left h1 {
+    /* max-width: 300px; */
+  }
+  .hero__right {
+    display: none;
+  }
+  .card {
+    flex: 0 1 100%;
+  }
 }
