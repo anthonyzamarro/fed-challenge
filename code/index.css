@@ -159,7 +159,7 @@ nav {
 }
 
 footer {
-  background-color: #2c2e30;
+  background-color: #202327;
   height: 60px;
 }
 
@@ -170,6 +170,10 @@ footer {
   height: 100%;
 }
 
+.container__footer span {
+  padding-left: 20px;
+  color: #7C7C7C;
+}
 
 /*******************************
          Responsive
